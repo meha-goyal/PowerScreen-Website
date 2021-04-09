@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Resposive meta tag to make this webpage page looking good on mobile browser-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Add a favicon-->
+		<link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+		<!--Add a page title-->
+		<title>Powerscreen</title>
+		<!--Include styles.css file to this webpage-->
+		<link rel="stylesheet" href="diagnosis.css">
+		<!--Include script.js file to this webpage-->
+		<script type="module" src="script.js"></script>
+		<!--Use custom font from Google font https://fonts.google.com/ -->
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="#portfolio">Diagnosis Tool</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<header id="index.html">
+			<div>
+				<h2>Welcome To</h2>
+				<h1>Powerscreen</h1>
+				<h3>A powerful diagnosis and treatment tool for special needs children. </h3>
+			</div>
+		</header>
+		<section id = 'portfolio'>
+      <div>
+			<h2>Diagnosis Tool</h2>
+      <h3>Instructions</h3>
+			<p>Please proceed only after reading and understanding our disclaimer. For each habit below that you notice in your child, please flip the card to view the corressponding diagnosis. If your child exhibits two or more symptoms of the same condition, please proceed to the resource page to determine next steps. Otherwise, if your child exhibits two or less symptoms of all conditions, feel free to contact your medical professional with any further concerns.
+      </p>
+      </div>
+		</section>
+
+    <section id="diagnosis">
+          <div class="wrapper">
+  <h1><center>The Patient's Habits: </h1>
+  <div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: green"">
+						<div class="inner">
+							<p>Trouble w/ Reading</p>
+              <span>Slow Educational Development</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>
+                Possibility of Dyslexia.<br>
+              </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: orange">
+						<div class="inner">
+							<p>Talking Excessively</p>
+              <span>Frequent Interruptions</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of ADHD 
+              </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: black">
+						<div class="inner">
+							<p>Fidgety</p>
+              <span>Repetitive, Unsusal Movements</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of Autism.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: gray">
+						<div class="inner">
+							<p>Difficulty w/ Instructions</p>
+              <span>Difficulty following instructions/forgetful</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>
+                Possibility of ADHD
+              </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: black">
+						<div class="inner">
+							<p>Forgetful</p>
+              <span>Easily Distracted</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of ADHD</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: gray">
+						<div class="inner">
+							<p>Poor Spelling</p>
+              <span>Slow Educational Development</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of Dyslexia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: blue">
+						<div class="inner">
+							<p>Poor Eye Contact</p>
+              <span>Lack of Eye Contact</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of Autism</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-color: purple">
+						<div class="inner">
+							<p>Non-speaking</p>
+              <span>Unusually Quiet</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Possibility of Autism.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+ </div>
+
+    </section>
+
+
+		<section id = 'contact'>
+	<h2>Contact</h2>
+	<form action='/survey/checkout' method='post' enctype="multipart/form-data">
+		<input name = "MyName" type="name" placeholder='Your name' required>
+		<input name ="Email" type="email" placeholder='Your email' required>
+		<textarea name = "Message" placeholder='Write a message here' required></textarea>
+		<button>Send Message</button>
+		<input type='hidden' name='redirecturl' value='index.html'>
+		<input type='hidden' name='survey' value='Contact'>
+	</form>
+		</section>
+		<footer>
+			<div class='links'>
+	<a href="https://www.linkedin.com/in/meha-goyal/"><img src="assets/linkedin.svg"></a>
+	<a href="https://github.com/MehaG1"><img src="assets/github.svg"></a>
+	<a href="https://www.youtube.com"><img src="assets/youtube.svg"></a>
+</div>
+<div>Copyright © 2021 Meha Goyal</div>
+		</footer>
+	</body>
+
+</html>
